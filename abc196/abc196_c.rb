@@ -1,8 +1,7 @@
-N = gets.chomp
-ans = 0
-2.step(N.size, 2) do |n|
-  (10**(n / 2 - 1)..10**(n / 2) - 1).each do |x|
-    ans += 1 if (x.to_s * 2).to_i <= N.to_i
+N = gets.to_i
+(1..10**6).each do |i|
+  if (i.to_s * 2).to_i > N
+    puts i - 1
+    exit
   end
 end
-puts ans
