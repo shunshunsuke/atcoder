@@ -1,41 +1,19 @@
-require 'set'
-
 N, Q = gets.split.map(&:to_i)
 A = gets.split.map(&:to_i)
-search = Set.new(A)
-qa = []
-Q.times do
-  qa << gets.to_i
+C = Array.new(N, 0)
+A.each_with_index do |a, i|
+  C[i] = a - i - 1
 end
-
-lower_hash = {}
-qa.each do |q|
-  if q >= A[-1]
-    i = nil
-  elsif q < A[0]
-    i = 0
+Q.times do
+  k = gets.to_i
+  if k > C[N - 1]
+    puts A[N - 1] + (k - C[N - 1])
   else
-    i = A.bsearch_index { |x| x >= q }
-  end
-  if i.nil?
-    i = A.size
-  elsif A[i] == q
-    i += 1
-  end
-  lower_hash[q] = i
-  if i.zero?
-    puts q
-    next
-  end
-
-  pos = 1
-  while i > 0
-    if search.include?(q + pos)
-      pos += 1
-      next
+    r = C.bsearch_index { |x| x >= k }
+    if r.zero?
+      puts k
+    else
+      puts A[r - 1] + (k - C[r - 1])
     end
-    i -= 1
-    pos += 1 if i > 0
   end
-  puts q + pos
 end
