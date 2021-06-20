@@ -1,25 +1,31 @@
-require 'set'
 N = gets.to_i
 A = gets.split.map(&:to_i)
-count = {}
-s = Set.new
+G = Array.new(A.max + 1) { [] }
 (0..N / 2).each do |i|
-  a, b = A[i], A[N - 1 - i]
+  a = A[i]
+  b = A[N - 1 - i]
   next if a == b
-  a, b = b, a if a > b
-  key = [a, b]
-  count[key] = count[key].to_i + 1
-  s.add(a)
-  s.add(b)
+  G[a] << b
+  G[b] << a
 end
-if count.size.zero?
-  puts 0
-else
-  ans = 1
-  max = count.sort_by { |_, v| v }.reverse
-  a, b = max[0][0][0], max[0][0][1]
-  s.delete(a)
-  s.delete(b)
-  ans += s.size
-  puts ans
+
+ans = 0
+seen = Array.new(A.max + 1, false)
+(A.max + 1).times do |i|
+  next if seen[i] || G[i].empty?
+  size = 1
+  seen[i] = true
+  todo = [i]
+  until todo.empty?
+    v = todo.pop
+    G[v].each do |nxt|
+      next if seen[nxt]
+      seen[nxt] = true
+      todo.push(nxt)
+      size += 1
+    end
+  end
+
+  ans += size - 1
 end
+puts ans
