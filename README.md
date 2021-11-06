@@ -39,3 +39,27 @@
 ## 参考ページ
 - [処理速度向上(ソート・ループ・リスト)](https://www.kumilog.net/entry/python-speed-comp)
 - [リスト計算量](https://qiita.com/Hironsan/items/68161ee16b1c9d7b25fb)
+
+
+## 競プロ典型90門
+### 002
+- bit全探索
+```python
+import itertools
+
+for A in itertools.product((0, 1), repeat=n):
+```
+
+### 007
+- 二分探索
+- bisectを使う
+
+### 010
+- 累積和
+
+### 014
+- 貪欲法
+
+### 22
+- 再帰関数
+- ユークリッドの互除法
