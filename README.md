@@ -77,3 +77,7 @@ for A in itertools.product((0, 1), repeat=n):
 ### 38 △
 - 最小公倍数
 - ユークリッドの互除法
+
+### 44 ◯
+- deque
+- 見かけ上の変化をメモ
