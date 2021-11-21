@@ -81,3 +81,6 @@ for A in itertools.product((0, 1), repeat=n):
 ### 44 ◯
 - deque
 - 見かけ上の変化をメモ
+
+### 46 ✕
+- 同じ意味のものをまとめて考える
