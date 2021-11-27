@@ -84,3 +84,6 @@ for A in itertools.product((0, 1), repeat=n):
 
 ### 46 ✕
 - 同じ意味のものをまとめて考える
+
+### 52 ✕
+- 因数分解
