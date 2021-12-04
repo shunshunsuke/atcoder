@@ -87,3 +87,6 @@ for A in itertools.product((0, 1), repeat=n):
 
 ### 52 ✕
 - 因数分解
+
+### 64 ✕
+- 階差
