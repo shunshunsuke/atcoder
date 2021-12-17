@@ -51,6 +51,9 @@ import itertools
 for A in itertools.product((0, 1), repeat=n):
 ```
 
+### 001 ✗
+- 答えで二分探索
+
 ### 007 ◯
 - 二分探索
 - bisectを使う
