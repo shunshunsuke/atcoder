@@ -64,6 +64,9 @@ for A in itertools.product((0, 1), repeat=n):
 ### 010 ✕
 - 累積和
 
+### 012 △
+- union find
+
 ### 014 ◯
 - 貪欲法
 
