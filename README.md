@@ -87,6 +87,9 @@ for A in itertools.product((0, 1), repeat=n):
 - 再帰関数
 - ユークリッドの互除法
 
+### 28 ✗
+- [いもす法](https://imoz.jp/algorithms/imos_method.html)
+
 ### 38 △
 - 最小公倍数
 - ユークリッドの互除法
