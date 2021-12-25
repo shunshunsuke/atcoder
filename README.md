@@ -90,6 +90,9 @@ for A in itertools.product((0, 1), repeat=n):
 ### 28 ✗
 - [いもす法](https://imoz.jp/algorithms/imos_method.html)
 
+### 34 ✗
+- 単調性を利用した尺取法
+
 ### 38 △
 - 最小公倍数
 - ユークリッドの互除法
