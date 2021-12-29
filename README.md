@@ -97,6 +97,9 @@ for A in itertools.product((0, 1), repeat=n):
 - 最小公倍数
 - ユークリッドの互除法
 
+### 42 ✗
+- 9の倍数の性質
+
 ### 44 ◯
 - deque
 - 見かけ上の変化をメモ
@@ -112,4 +115,4 @@ for A in itertools.product((0, 1), repeat=n):
 
 ### 69 ✕
 - 繰り返し二乗法
- - pythonはpow関数が使える
+- pythonはpow関数が使える
