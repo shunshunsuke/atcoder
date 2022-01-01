@@ -100,6 +100,9 @@ for A in itertools.product((0, 1), repeat=n):
 ### 42 ✗
 - 9の倍数の性質
 
+### 43 ✗
+- 01-BFS
+
 ### 44 ◯
 - deque
 - 見かけ上の変化をメモ
