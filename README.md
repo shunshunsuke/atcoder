@@ -125,3 +125,7 @@ for A in itertools.product((0, 1), repeat=n):
 ### 69 ✕
 - 繰り返し二乗法
 - pythonはpow関数が使える
+
+### 70 ✗
+- 中央値が絶対値総和の最小となる
+  - statistics.median()
