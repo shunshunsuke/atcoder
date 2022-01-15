@@ -43,6 +43,9 @@
 
 
 ## 競プロ典型90門
+### 001 ✗
+- 答えで二分探索
+
 ### 002
 - bit全探索
 ```python
@@ -51,9 +54,6 @@ import itertools
 for A in itertools.product((0, 1), repeat=n):
 ```
 
-### 001 ✗
-- 答えで二分探索
-
 ### 003 ✗
 - 木の直径
 
@@ -61,7 +61,7 @@ for A in itertools.product((0, 1), repeat=n):
 - 二分探索
 - bisectを使う
 
-### 010 ✕
+### 010 ✕ ○
 - 累積和
 
 ### 012 △
@@ -79,13 +79,13 @@ for A in itertools.product((0, 1), repeat=n):
 ### 020 ✕
 - 小数の誤差
 
+### 22 △ ○
+- 再帰関数
+- ユークリッドの互除法
+
 ### 026 ✗
 - 二部グラフ
 - DFS
-
-### 22 △
-- 再帰関数
-- ユークリッドの互除法
 
 ### 28 ✗
 - [いもす法](https://imoz.jp/algorithms/imos_method.html)
