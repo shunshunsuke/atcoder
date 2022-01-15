@@ -46,7 +46,7 @@
 ### 001 ✗ △
 - 答えで二分探索
 
-### 002
+### 002 ✗ ○
 - bit全探索
 ```python
 import itertools
