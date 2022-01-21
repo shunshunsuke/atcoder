@@ -54,7 +54,7 @@ import itertools
 for A in itertools.product((0, 1), repeat=n):
 ```
 
-### 003 ✗
+### 003 ✗ ○
 - 木の直径
 
 ### 007 ◯
