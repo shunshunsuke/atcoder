@@ -107,7 +107,7 @@ for A in itertools.product((0, 1), repeat=n):
 - deque
 - 見かけ上の変化をメモ
 
-### 46 ✕
+### 46 ✕ ✗
 - 同じ意味のものをまとめて考える
 
 ### 52 ✕
