@@ -83,7 +83,7 @@ for A in itertools.product((0, 1), repeat=n):
 - 再帰関数
 - ユークリッドの互除法
 
-### 026 ✗
+### 026 ✗ ○
 - 二部グラフ
 - DFS
 
