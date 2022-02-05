@@ -124,7 +124,7 @@ for A in itertools.product((0, 1), repeat=n):
 ### 64 ✕
 - 階差
 
-### 69 ✕
+### 69 ✕ △
 - 繰り返し二乗法
 - pythonはpow関数が使える
 
